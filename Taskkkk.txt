@@ -1,0 +1,59 @@
+https://learn.microsoft.com/en-us/sysinternals/downloads/sysinternals-suite
+
+Get-FileHash "C:\Users\mahmoud\AppData\Local\Microsoft\OneDrive\OneDrive.exe" -Algorithm SHA256
+
+
+Get-AuthenticodeSignature "C:\Users\mahmoud\AppData\Local\Microsoft\OneDrive\OneDrive.exe" | Format-List
+
+
+SignerCertificate      : [Subject]
+                           CN=Microsoft Corporation, O=Microsoft
+                         Corporation, L=Redmond, S=Washington, C=US
+
+                         [Issuer]
+                           CN=Microsoft Windows Code Signing PCA 2024,
+                         O=Microsoft Corporation, C=US
+
+                         [Serial Number]
+                           3300000102027DBC9D2A9D3307000000000102
+
+                         [Not Before]
+                           3/5/2026 10:57:42 PM
+
+                         [Not After]
+                           3/3/2027 10:57:42 PM
+
+                         [Thumbprint]
+                           84B71332947747A3826D84017DFD36960E99B370
+
+TimeStamperCertificate : [Subject]
+                           CN=Microsoft Time-Stamp Service, OU=nShield
+                         TSS ESN:3303-05E0-D947, OU=Microsoft America
+                         Operations, O=Microsoft Corporation, L=Redmond,
+                         S=Washington, C=US
+
+                         [Issuer]
+                           CN=Microsoft Time-Stamp PCA 2010, O=Microsoft
+                         Corporation, L=Redmond, S=Washington, C=US
+
+                         [Serial Number]
+                           330000022133C035FBD20F21A4000100000221
+
+                         [Not Before]
+                           2/19/2026 10:39:54 PM
+
+                         [Not After]
+                           5/17/2027 10:39:54 PM
+
+                         [Thumbprint]
+                           0B6C4819667C981D72750C66F97C68E9957A6DB9
+
+Status                 : Valid
+StatusMessage          : Signature verified.
+Path                   : C:\Users\mahmoud\AppData\Local\Microsoft\OneDriv
+                         e\OneDrive.exe
+SignatureType          : Authenticode
+IsOSBinary             : False
+
+
+
