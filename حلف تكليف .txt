@@ -1,0 +1,115 @@
+\BasicAnalysis_LabSample1.exe
+
+Algorithm       Hash                                                                   Path
+---------       ----                                                                   ----
+MD5             A81B728AA80482F6EEC935418962ED15                                       C:\Users\mahmoud\Desktop\basic\Basic...
+
+PS C:\Users\mahmoud\Desktop\basic>  Get-FileHash -Algorithm MD5 .\BasicAnalysis_LabSample1.exe
+
+Algorithm       Hash                                                                   Path
+---------       ----                                                                   ----
+MD5             A81B728AA80482F6EEC935418962ED15                                       C:\Users\mahmoud\Desktop\basic\BasicAnalysi...
+
+
+PS C:\Users\mahmoud\Desktop\basic> Get-FileHash -Algorithm MD5 .\BasicAnalysis_LabSample1.exe
+
+Algorithm       Hash                                                                   Path
+---------       ----                                                                   ----
+MD5             A81B728AA80482F6EEC935418962ED15                                       C:\Users\mahmoud\Desktop\basic\BasicAnalysi...
+
+
+PS C:\Users\mahmoud\Desktop\basic>
+
+Get-FileHash -Algorithm SHA256 .\BasicAnalysis_LabSample1.exe
+
+Get-FileHash -Algorithm MD5 .\BasicAnalysis_LabSample2.exe
+Get-FileHash -Algorithm SHA256 .\BasicAnalysis_LabSample2.exe
+
+PS C:\Users\mahmoud\Desktop\basic> Get-FileHash -Algorithm MD5 .\BasicAnalysis_LabSample2.exe
+
+Algorithm       Hash                                                                   Path
+---------       ----                                                                   ----
+MD5             87587D62BA7884B0A41BA072FBA3AC85                                       C:\Users\mahmoud\Desktop\basic\BasicAnalysi...
+
+
+PS C:\Users\mahmoud\Desktop\basic> Get-FileHash -Algorithm SHA256 .\BasicAnalysis_LabSample2.exe
+
+Algorithm       Hash                                                                   Path
+---------       ----                                                                   ----
+SHA256          A0A6A52A9EECC769545933572B330E898AC8634C15F6E98CB9EBBFCF2345FE98       C:\Users\mahmoud\Desktop\basic\BasicAnalysi...
+
+
+PS C:\Users\mahmoud\Desktop\basic>
+Get-Content .\BasicAnalysis_LabSample1.exe -Filter * | Select-String -Pattern "http", ".exe", ".dll", "IP" | Select-Object -First 20
+
+PS C:\Users\mahmoud\Desktop\basic> Get-Content .\BasicAnalysis_LabSample1.exe -Filter * | Select-String -Pattern "http", ".exe", ".dll", "IP" | Select-Object -First 20
+
+[N☻‹ÚL♣JN☻H‹ùH§HN☻¹♦èNýÿÿ‹ÓH‹ÏH…Àt♂D‹Æÿ§CÞ☺ë♠ÿ§sÜ☺H‹\$0H‹t$8HƒÄ _ÃÌÌÌH‹ÄL‰H
+L‰@↑H‰P►H‰SHƒìpH‹Ùƒ`ÈH‰HàL‰@èè,ûÿÿHT$X‹♂H‹@►ÿ§ëÝ☺ÇD$@ë‹D$@HƒÄp[ÃÌÌÌH‰\H‰l$►H‰t$↑WHƒì
+‹y♀‹ò…ÿH‹ét+_ÿ‹ûèÚúÿÿH¶›H‹@`H♀HcE►H♥Á;p♦~♣;~♠…ÛëÓ3ÀH‹\$0H‹l$8H‹t$@HƒÄ _ÃÌÌ@SHƒì H‹ÚH‹ÑH‹Ëè˜♣‹ÐH‹Ëè~ÿÿÿH…À☼•ÀHƒÄ
+[ÃÌÌH‰\H‰t$►WHƒì LL$HI‹ØH‹úèEH‹×H‹ËH‹ðèS♣‹ÐH‹Ëè9ÿÿÿH…Àu♠AƒÉÿë♦D‹H♦L‹ÃH‹×H‹Îè¶↨H‹\$0H‹t$8HƒÄ _ÃH‰\$►H‰l$↑VWATAVAWHƒì A‹p♀L‹á
+I‹ÈI‹ùM‹ðL‹úèî♦M‹¶$‹èL‰↨…ötwIcF►Nÿ‹ñH♀‰H∟ˆI♥;k♦~â;⌂ÝI‹☼HT$PE3Àÿ§↔Ú☺LcC►3ÉL♥D$PD‹K♀D‹►E…Ét↨IP♀Hc☻I;Ât♂ÿÁHƒÂ¶A;ÉríA;És™I‹♦$
+H♀‰IcLˆ►H‹♀☺H‰☼H‹\$XH‹ÇH‹l$`HƒÄ A_A^A\_^ÃH‰\H‰l$►H‰t$↑WATAUAVAƒËÿH…Òt☼‹B♦9☺~#‹9A♦;9|▬D;y♦⌂►E;ËA‹ÀE‹èA☼EÁD‹ÈAÿÀHƒÁ¶E;ÆrÅE;
+ËL‰d$ A‹ÂL‰d$0A☼EÁL\$@I‹[0I‹s@‰D$(AE☺☼►D$ H♦€H¶ƒI♥Óë♥I‹ÒI♀
+D☼EÐH‹ÅD‰T$8☼►L$0ó☼⌂Eó☼⌂M►I‹k8I‹ãA_A^A]A\_ÃèóÊÌÌÌ@UHl$áHìàH‹♣w♥H3ÄH‰E☼L‹UwH♣½J☻☼►L‹ÙHL$0☼►H►☼◄☺☼►@ ☼◄I►☼►H0☼◄A ☼►@@☼◄I0
+☼►HP☼◄A@☼►@`☼◄IP☼►ˆ€☼◄A`☼►@pH‹€☼◄Ap☼◄‰€H‰H♣ô◄I‹♂H‰EH‹EOH‰EŸHcE_H‰E§H‹EWH‰E·☼¶E⌂H‰EÇI‹B@H‰D$(I‹B(L‰M—E3ÉL‰E¯LD$0H‰
+U¿I‹↕H‰D$ HÇEÏ ♣“↓ÿ§ö×☺H‹M☼H3ÌèŠ×ÿÿHÄà]ÃÌ@SHƒì H‹ÙH‰◄èïöÿÿH;XXs♂èäöÿÿH‹HXë☻3ÉH‰èÓöÿÿH‰XXH‹ÃHƒÄ [ÃÌÌH‰\WHƒì
+H‹ùè²öÿÿH;xXu5è§öÿÿH‹PXH…Òt'H‹H;út
+H‹ÈI‹P♦HÑèLAÿL♥ÀM‰A@M‹ÐA‹A0…À⌂♣E…ÛtGÿÈA‰A0¸ÍÌÌÌA÷ãÁê♥ŠÂÀà☻♀►☻ÉD*ÙA€Ã0AŠÃAŠËD‹Ú<9~♂ŠÃ4☺Àà♣♦☻ÁAˆ☻IÿI@M‹Q@ë¬E+A@IB☺H‹\E‰AHI‰A@Ã
+ÌÌH‰\H‹X♦L‹ÉHƒÁPAŠØD‹ÒH…Àu¸☺ë♫H‹ÈI‹P♦HÁè☻H@ÿL♦AM‰A@I‹ÀM‹ØA‹I0…É⌂♣E…ÒtSAÿA‰A0¸ÍÌÌÌA÷âÁê♥☼·ÂfÁà☻♀►f♥ÉfD+ÑAJ0D‹Òfƒù9v♫Š
+Ã4☺Àà♣♦☻Á☼¾È☼¾ÁfA‰♥IƒA@þI‹A@L‹ØëH‹\L+ÀIÑøHƒÀ☻E‰AHI‰A@ÃÌÌÌLIPEŠØI‹♦D‹ÒH…Àu¸☻ë
+AŠÃ4☺Àà♣♦A☻ÁAˆHÿI@L‹A@ëÃ+Q@I@☺‰QHH‰A@ÃLIPEŠØI‹♦D‹ÒH…Àu¸☺ë♫L‹ÈH‹P♦HÁè☻H@ÿI¶AH‰Q@H‹ÂL‹ÊD‹A0E…À⌂♣E…ÒtCA@ÿE☼·ÂfAƒà☼AÁê♦
+fAƒÀ0‰A0fAƒø9v◄AŠÃ4☺Àà♣♦A☻ÀD☼¶ÀfE‰☺HƒA@þH‹A@L‹Èë¯H+ÐHƒÀ☻HÑú‰QHH‰A@ÃLAPL‹ÊI‹♦H…Àu¸☻ë
+H‹ÈI‹P♦HÑèLAÿL♥ÀM‰A@M‹ÐA‹A0…À⌂♣M…ÛtMÿÈA‰A0H¸ÍÌÌÌÌÌÌÌI÷ãHÁê♥ŠÂÀà☻♀►☻ÉD*ÙA€Ã0AŠÃAŠËL‹Ú<9~♂ŠÃ4☺Àà♣♦☻ÁAˆ☻IÿI@M‹Q@ë¦E+A@IB☺H‹\E‰A
+HI‰A@ÃH‰\H‹X♦L‹ÉHƒÁPAŠØL‹ÒH…Àu¸☺ë♫H‹ÈI‹P♦HÁè☻H@ÿL♦AM‰A@I‹ÀM‹ØA‹I0…É⌂♣M…ÒtYAÿA‰A0H¸ÍÌÌÌÌÌÌÌI÷âHÁê♥☼·ÂfÁà☻♀►f♥ÉfD+ÑAJ0
+L‹Òfƒù9v♫ŠÃ4☺Àà♣♦☻Á☼¾È☼¾ÁfA‰♥IƒA@þI‹A@L‹ØëšH‹\L+ÀIÑøHƒÀ☻E‰AHI‰A@ÃÌLIPEŠØI‹♦L‹ÒH…Àu¸☻ë
+AŠÃ4☺Àà♣♦A☻ÁAˆHÿI@L‹A@ëÃ+Q@I@☺‰QHH‰A@ÃLIPEŠØI‹♦L‹ÒH…Àu¸☺ë♫L‹ÈH‹P♦HÁè☻H@ÿI¶AH‰Q@H‹ÂL‹ÊD‹A0E…À⌂♣M…ÒtCA@ÿE☼·ÂfAƒà☼IÁê♦
+fAƒÀ0‰A0fAƒø9v◄AŠÃ4☺Àà♣♦A☻ÀD☼¶ÀfE‰☺HƒA@þH‹A@L‹Èë¯H+ÐHƒÀ☻HÑú‰QHH‰A@ÃH‹ÄH‰X►H‰p↑H‰x UAVAWH¨HüÿÿHì
+♦H‹♣[¿☻H3ÄH‰…♥H‹☺H‹ÙL‹L‹8I‹ÏèXºH‹K↑☼WÀL‹♂@ŠðH‹S L‹↓M‹  H‹:H‹K►L‹◄H‹ƒd$@ƒd$Hƒd$Lƒd$Pfƒd$Xƒd$hƒ¥ˆ♥H‰L$(HL$
+ÆD$DÆD$lf☼⌂…p♥L‰€♥L‰T$ L‰\$0H‰|$8èÞ☺H‹x♥‹Øè∟ŽHƒ¥x♥M‹ÆI‹×@ŠÎèzº‹ÃH‹♥H3Ìè}ÿÿLœ$
+♦I‹[(I‹s0I‹{8I‹ãA_A^]ÃH‹☻H‹øH‹☻DŠ☺„Àt¶ŠÐŠÂA:Ñt♂HÿÁŠ☺ŠÐ„ÀuîHÿÁ„Àt8ë     ,E¨ßt
+HÿÁŠ☺„ÀuñL‹ÁHÿÉŠ☺<0t÷A:ÁHQÿH☼EÑL+ÂAŠ♦►HÿÂˆ☻„ÀuóÃÌÌL‹ÜI‰[►I‰k↑I‰s WHƒì0H‹H‹ñH‹A►H‹úIHÿÈI‰KðISèH‹],A±☺A¸
+¡.☻H‹EØ‰¨♥H‹EØH‰ˆˆJBH‹EØHU(f‰ˆ¼H‹EØf‰ˆÂ☺HM↑H‹EØHƒ♥è&þÿÿLMÐLEðHUÔHM↑è‘þÿÿHƒÄP]ÃÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌH…Ét→SHƒì
+H‹Ùè♫H‹Ëè^ùÿÿHƒÄ [Ã@UH‹ìHƒì@HEèH‰MèH‰EðH§$q☺¸♣‰E ‰E(HEèH‰Eø¸♦‰Eà‰EäH‹☺H;Ât♀H‹Èè♫ùÿÿH‹MèH‹Ipè☺ùÿÿH‹MèH‹IXèôøÿÿH‹MèH‹I`èçø
+ÿÿH‹MèH‹IhèÚøÿÿH‹MèH‹IHèÍøÿÿH‹MèH‹IPèÀøÿÿH‹MèH‹Ixè³øÿÿH‹MèH‹‰€è£øÿÿH‹MèH‹‰À♥è“øÿÿLM
+LEðHU(HM↑èÊýÿÿLMàLEøHUäHM↑è-ýÿÿHƒÄ@]ÃÌÌÌH‰\WHƒì H‹ùH‹ÚH‹‰H…Ét,èÃ|H‹H;
+JÂ☻H‰L$ H…ÉtoH…Àt]A¸☻E‹ÈAP~☼►☼◄☺☼►H►☼◄I►☼►@ ☼◄A
+☼►H0☼◄I0☼►@@☼◄A@☼►HP☼◄IP☼►@`☼◄A`H♥Ê☼►Hp☼◄IðH♥ÂIƒé☺u¶Šˆ☺ë'3ÒA¸☺☺è↓¨þÿè∟PÿÿÇ▬è™ŽÿÿA¸☻AP~H‹♥HH‹ˆH♣↓☺H‰D$(H‹
+Á☻H‰L$0H…Ét^H…ÀtL☼►☼◄☺☼►H►☼◄I►☼►@ ☼◄A
+☼►H0☼◄I0☼►@@☼◄A@☼►HP☼◄IP☼►@`☼◄A`H♥Ê☼►Hp☼◄IðH♥ÂIƒè☺u¶ë↔3ÒA¸☺èx§þÿè{OÿÿÇ▬èøÿÿH‹HH‹◄ƒÈÿð☼Á☻ƒø☺u‹HH♣ôÂ☺H9☺H‹
+è/ŽÿÿH‹♥H‹►H‹HH‹‚ˆH‰☺H‹♥HH‹ˆðÿ‹☼èñæÿÿH‹\$PHƒÄ@_ÃÌÌ@SHƒì@‹Ù3ÒHL$
+èì8ÿÿƒ%±À☻ƒûþu↕Ç♣¢À☻☺ÿ§D‘ë§ƒûýu¶Ç♣‹À☻☺ÿ§%‘‹Øë↨ƒûüu↕H‹D$(Ç♣mÀ☻☺‹X♀€|$8t♀H‹L$ ƒ¡¨♥ý‹ÃHƒÄ@[ÃÌÌÌH‰\WHƒì
+H‹Ù3ÒHƒÁ↑A¸☺☺è^¦þÿ3ÒH{♀☼·ÂL
+ AŠL☺çë☻2Éˆˆ☺HƒÂ☻HÿÀHƒë☺uÍë?3ÒHO↓»☺DBŸA@ ƒø↓€        ►B ë►Aƒø↓€      Bàë☻2Àˆ☺ÿÂHÿÁ;ÓrÌH‹p♠H3Ìè’ŒþÿLœ$€I‹[↑I‹{
+I‹ã]ÃÌH‹ÄH‰H‰p►L‰H L‰@↑UWAVH¨xþÿÿHìp☻DŠò‹ÙI‹ÑI‹Èè;☻‹ËèÄüÿÿH‹☺‹øL‹ˆA;@♦u3Àéþ☺¹(☻èE·ÿÿH‹ØH…Àu☼3Éè‚ŠÿÿƒÈÿéÝ☺H‹…
+☺HL$@º♦D‹ÂH‹€ˆDJ|☼►☼►H►☼◄☺☼►@ ☼◄I►☼►H0☼◄A ☼►@@☼◄I0☼►HP☼◄A@☼►@`☼◄IP☼►HpI♥Á☼◄A`I♥É☼◄IðIƒè☺u¶☼►☼►H►H‹@ ☼◄☺☼◄I►H‰A
+H‹ËHD$@☼►☼►H►☼◄☺☼►@ ☼◄I►☼►H0☼◄A ☼►@@☼◄I0☼►HP☼◄A@☼►@`☼◄IP☼►HpI♥Á☼◄A`I♥É☼◄IðHƒê☺u¶☼►☼►H►H‹@ ☼◄☺☼◄I►H‰A
+‹Ï!‼H‹Óè;☻ƒÏÿ‹ð;Çu→è‰JÿÿH‹ËÇ▬èk‰ÿÿ‹ÇéÇE„öu♣è‚uÿÿH‹…☺H‹ˆˆ‹Çð☼Á☺♥Çu▼H‹…☺H‹ˆˆH♣å½☺H;Èt♣è#‰ÿÿÇ♥☺H‹…☺H‰˜ˆH‹…
+☺‹ˆ¨♥…
+..%s%c%s%c%s%c%s%s%c%s.pkg%s%c%s.exe%s%c%sArchive not found: %s
+%s%c%s.pyAbsolute path to script exceeds PATH_MAX
+_pyi_main_coFailed to execute script '%s' due to unhandled exception!
+_MEIPASS2_PYI_ONEDIR_MODECannot open PyInstaller archive from executable (%s) or external archive (%s)
+Failed to convert DLL search path!
+Failed to get executable path.
+GetModuleFileNameWFailed to convert executable path to UTF-8.
+PyImport_ExecCodeModuleFailed to get address for PyImport_ExecCodeModule
+Reported length (%d) of DLL name (%s) length exceeds buffer[%d] space
+ucrtbase.dllPath of ucrtbase.dll (%s) length exceeds buffer[%d] space
+Path of DLL (%s) length exceeds buffer[%d] space
+
+
+
+باقي عليك فقط الملف الثاني الموجود في المجلد. طبق عليه نفس الخطوات لنستخرج بصمته ونصوصه بنفس الطريقة:
+
+استخرج بصمة الـ MD5 للملف الثاني:
+
+PowerShell
+Get-FileHash -Algorithm MD5 .\BasicAnalysis_LabSample2.exe
+(تأكد من اسم الملف الثاني بعد كتابة ls إذا كان مختلفاً عن Sample2).
+
+استخرج النصوص (Strings) للملف الثاني بنفس الأمر:
+
+PowerShell
+Get-Content .\BasicAnalysis_LabSample2.exe -Filter * | Select-String -Pattern "http", ".exe", ".dll", "IP" | Select-Object -First 20
+هات لي مخرجات الملف الثاني لنقوم بصياغة التقرير النهائي لك كاملاً وجاهزاً للتسليم!
